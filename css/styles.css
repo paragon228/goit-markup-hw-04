@@ -93,10 +93,6 @@ img {
   display: flex;
 }
 
-.site-contacts {
-  display: flex;
-}
-
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
 }
@@ -222,6 +218,10 @@ img {
   display: flex;
 }
 
+.item {
+  background-color: #ffffff;
+}
+
 .team .item:not(:last-child) {
   margin-right: 30px;
 }
@@ -285,7 +285,30 @@ img {
 }
 
 .footer {
+  padding: 60px;
   background-color: var(--dark-bg-color);
+}
+
+.footer-container {
+  margin-bottom: 20px;
+}
+
+.footer-link {
+  text-decoration: none;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.address {
+  margin-bottom: 9px;
+}
+
+.contacts-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .site-options .conteiner-menu {
