@@ -57,6 +57,11 @@ img {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+.page-header {
+  border-bottom: solid 1px #ececec;
+}
+
 .link-page {
   text-decoration: none;
   font-family: Raleway;
@@ -77,7 +82,6 @@ img {
   min-height: 80px;
   align-items: center;
   justify-content: space-between;
-  border-bottom: solid #ececec;
 }
 
 .navigation {
@@ -127,6 +131,36 @@ img {
   color: inherit;
 }
 
+.header-item {
+  display: inline-block;
+}
+
+.icon-envelope::before {
+  display: inline-block;
+  content: '';
+  margin-right: 10px;
+  height: 12px;
+  width: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/envelope.svg);
+}
+
+.icon-smartphone::before {
+  display: inline-block;
+  content: '';
+  margin-right: 10px;
+  height: 16px;
+  width: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/smartphone.svg);
+}
+
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .hero {
   display: flex;
   justify-content: center;
@@ -134,8 +168,17 @@ img {
   margin-bottom: 0;
   text-align: center;
 
-  min-height: 600px;
-  background-color: var(--dark-bg-color);
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #c4c4c4;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/hero.jpg');
 }
 
 .hero-content {
@@ -164,6 +207,33 @@ img {
 .first-item {
   display: flex;
   width: 270px;
+}
+
+.content::before {
+  display: block;
+  content: '';
+  height: 120px;
+  margin-bottom: 30px;
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--secondary-bg-color);
+}
+
+.icon-antenna::before {
+  background-image: url(../images/antenna.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../images/clock.svg);
+}
+
+.icon-diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../images/astronaut.svg);
 }
 
 .recommendation-list .content:not(:last-child) {
