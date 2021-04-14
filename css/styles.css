@@ -396,8 +396,13 @@ img {
   width: 170px;
   height: 90px;
   box-sizing: border-box;
-  border: 1px solid #afb1b8;
+  border: 1px solid currentColor;
   border-radius: 4px;
+  color: #afb1b8;
+}
+
+.logo-item-link:hover {
+  color: var(--accent-color);
 }
 
 .logo-item:hover .icon {
