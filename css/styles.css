@@ -264,7 +264,10 @@ img {
   display: flex;
 }
 
-.item {
+.team > .item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
 }
 
@@ -422,6 +425,14 @@ img {
   background-color: var(--dark-bg-color);
 }
 
+.card-set {
+  outline: 1px  solid tomato;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .footer-container {
   margin-bottom: 20px;
 }
@@ -491,7 +502,7 @@ img {
 }
 
 .grid-items {
-  flex-basis: calc((100% - 30px * 3) / 3);
+  flex-basis: calc((100% - 30px * 3) / 3;
   margin-left: 30px;
   margin-top: 30px;
 }
